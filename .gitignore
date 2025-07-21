@@ -1,0 +1,26 @@
+# 编译生成文件
+*.o
+*.obj
+*.exe
+*.out
+*.a
+*.so
+*.dll
+
+# 日志文件
+*.log
+
+# 临时文件
+*~
+*.swp
+.DS_Store
+
+# CMake 相关
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# 单元测试输出
+/unittest/*.log
+/unittest/*.out
