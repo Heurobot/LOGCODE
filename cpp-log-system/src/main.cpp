@@ -3,20 +3,20 @@
 #include "../../unittest/test.h"
 
 int main() {
-    Logger logger;
-
+    
+    Logger& log = *Logger::getInstance();
     // Set log level to DEBUG
-    logger.setLogLevel(LogLevel::DEBUG);
+    log.setLogLevel(LogLevel::DEBUG);
 
     // Set output file
-    logger.setOutputFile("./log.txt");
+    log.setOutputFile("logtest.log");
 
     // Log messages of different levels
-    logger.log(LogLevel::INFO, "This is an info message.");
-    logger.log(LogLevel::WARNING, "This is a warning message.");
-    logger.log(LogLevel::ERROR, "This is an error message.");
-    logger.log(LogLevel::DEBUG, "This is a debug message.");
-    logger.log(LogLevel::FATAL, "This is a fatal message.");
+    log.log(LogLevel::INFO, "This is an info message.");
+    log.log(LogLevel::WARNING, "This is a warning message.");
+    log.log(LogLevel::ERROR, "This is an error message.");
+    log.log(LogLevel::DEBUG, "This is a debug message.");
+    log.log(LogLevel::FATAL, "This is a fatal message.");
 
 
     // Test writepoint1 function

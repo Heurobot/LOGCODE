@@ -24,3 +24,4 @@ Makefile
 # 单元测试输出
 /unittest/*.log
 /unittest/*.out
+build/.cmake/api/v1/query/client-vscode/query.json
